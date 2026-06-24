@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Other Incident Report</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a href="index.html" class="logo-link">
+
+  <img
+    src="images/logo.png"
+    alt="NCIC Logo"
+    class="site-logo">
+
+</a>
+
+</header>
+
+<section class="form-container">
+
+<h1>Other Incident Report</h1>
+
+<div class="progress-bar">
+<div class="progress" id="progress"></div>
+</div>
+
+<p id="stepText">Step 1 of 4</p>
+
+<form id="reportForm">
+
+<!-- STEP 1 -->
+
+<div class="step active">
+
+<h2>Incident Category</h2>
+
+<input
+id="incidentCategory"
+type="text"
+placeholder="Briefly identify the incident type"
+required>
+
+</div>
+
+<!-- STEP 2 -->
+
+<div class="step">
+
+<h2>Reporter Information</h2>
+
+<input
+id="firstName"
+type="text"
+placeholder="First Name"
+required>
+
+<input
+id="lastName"
+type="text"
+placeholder="Last Name"
+required>
+
+<input
+id="email"
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+id="phone"
+type="tel"
+placeholder="Phone Number">
+
+</div>
+
+<!-- STEP 3 -->
+
+<div class="step">
+
+<h2>Incident Details</h2>
+
+<input
+id="incidentDate"
+type="date">
+
+<input
+id="platform"
+type="text"
+placeholder="Website, Platform, or Service Involved">
+
+<input
+id="suspectAlias"
+type="text"
+placeholder="Known Username or Alias (if any)">
+
+</div>
+
+<!-- STEP 4 -->
+
+<div class="step">
+
+<h2>Incident Narrative</h2>
+
+<textarea
+id="narrative"
+rows="8"
+placeholder="Describe what happened..."
+required></textarea>
+
+<label>
+
+<input
+id="accuracyDeclaration"
+type="checkbox"
+required>
+
+I certify that the information provided is accurate.
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+id="investigationAcknowledgement"
+type="checkbox"
+required>
+
+I understand that submission does not guarantee investigation.
+
+</label>
+
+</div>
+
+<div class="buttons">
+
+<button type="button" id="prevBtn">
+Previous
+</button>
+
+<button type="button" id="nextBtn">
+Next
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+<script src="report.js"></script>
+
+</body>
+
+</html>

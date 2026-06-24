@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Financial Fraud Report | NCIC</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a href="index.html" class="logo-link">
+
+  <img
+    src="images/logo.png"
+    alt="NCIC Logo"
+    class="site-logo">
+
+</a>
+</header>
+
+<section class="form-container">
+
+<h1>Financial Fraud Report</h1>
+
+<div class="progress-bar">
+<div class="progress" id="progress"></div>
+</div>
+
+<p id="stepText">Step 1 of 4</p>
+
+<form id="reportForm">
+
+<!-- STEP 1 -->
+
+<div class="step active">
+
+<h2>Fraud Classification</h2>
+
+<label for="fraudType">
+What type of financial fraud occurred?
+</label>
+
+<select id="fraudType" required>
+
+<option value="">Select</option>
+
+<option>Bank Transfer Fraud</option>
+<option>Credit Card Fraud</option>
+<option>Investment Fraud</option>
+<option>Wire Transfer Fraud</option>
+<option>Business Email Compromise</option>
+<option>Loan Fraud</option>
+<option>Insurance Fraud</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<!-- STEP 2 -->
+
+<div class="step">
+
+<h2>Reporter Information</h2>
+
+<input
+id="firstName"
+type="text"
+placeholder="First Name"
+required>
+
+<input
+id="middleName"
+type="text"
+placeholder="Middle Name">
+
+<input
+id="lastName"
+type="text"
+placeholder="Last Name"
+required>
+
+<input
+id="email"
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+id="phone"
+type="tel"
+placeholder="Phone Number"
+required>
+
+<input
+id="country"
+type="text"
+placeholder="Country">
+
+<input
+id="state"
+type="text"
+placeholder="State">
+
+<input
+id="city"
+type="text"
+placeholder="City">
+
+</div>
+
+<!-- STEP 3 -->
+
+<div class="step">
+
+<h2>Financial Information</h2>
+
+<input
+id="institutionName"
+type="text"
+placeholder="Bank / Financial Institution">
+
+<input
+id="transactionDate"
+type="date">
+
+<input
+id="amountLost"
+type="number"
+placeholder="Estimated Amount Lost">
+
+<select id="currency">
+
+<option value="">Select Currency</option>
+
+<option>USD</option>
+<option>EUR</option>
+<option>GBP</option>
+<option>INR</option>
+<option>Other</option>
+
+</select>
+
+<select id="paymentMethod">
+
+<option value="">Payment Method</option>
+
+<option>Bank Transfer</option>
+<option>Credit Card</option>
+<option>Debit Card</option>
+<option>Cryptocurrency</option>
+<option>Cash</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<!-- STEP 4 -->
+
+<div class="step">
+
+<h2>Incident Narrative</h2>
+
+<textarea
+id="narrative"
+rows="8"
+placeholder="Describe the fraud incident..."
+required></textarea>
+
+<label>
+
+<input
+id="accuracyDeclaration"
+type="checkbox"
+required>
+
+I certify that the information provided is accurate.
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+id="investigationAcknowledgement"
+type="checkbox"
+required>
+
+I understand that submission does not guarantee investigation.
+
+</label>
+
+</div>
+
+<div class="buttons">
+
+<button type="button" id="prevBtn">
+Previous
+</button>
+
+<button type="button" id="nextBtn">
+Next
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+<script src="report.js"></script>
+
+</body>
+
+</html>
+

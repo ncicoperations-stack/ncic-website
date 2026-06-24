@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Online Scam Report | NCIC</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a href="index.html" class="logo-link">
+
+  <img
+    src="images/logo.png"
+    alt="NCIC Logo"
+    class="site-logo">
+
+</a>
+
+</header>
+
+<section class="form-container">
+
+<h1>Online Scam Report</h1>
+
+<div class="progress-bar">
+<div class="progress" id="progress"></div>
+</div>
+
+<p id="stepText">Step 1 of 4</p>
+
+<form id="reportForm">
+
+<!-- STEP 1 -->
+
+<div class="step active">
+
+<h2>Scam Classification</h2>
+
+<label for="scamType">
+What type of online scam did you encounter?
+</label>
+
+<select id="scamType" required>
+
+<option value="">Select</option>
+
+<option value="Investment Scam">Investment Scam</option>
+<option value="Romance Scam">Romance Scam</option>
+<option value="Employment Scam">Employment Scam</option>
+<option value="Marketplace Scam">Marketplace Scam</option>
+<option value="Tech Support Scam">Tech Support Scam</option>
+<option value="Advance Fee Scam">Advance Fee Scam</option>
+<option value="Cryptocurrency Scam">Cryptocurrency Scam</option>
+<option value="Other">Other</option>
+
+</select>
+
+</div>
+
+<!-- STEP 2 -->
+
+<div class="step">
+
+<h2>Reporter Information</h2>
+
+<input
+id="firstName"
+type="text"
+placeholder="First Name"
+autocomplete="given-name"
+required>
+
+<input
+id="middleName"
+type="text"
+placeholder="Middle Name"
+autocomplete="additional-name">
+
+<input
+id="lastName"
+type="text"
+placeholder="Last Name"
+autocomplete="family-name"
+required>
+
+<input
+id="dateOfBirth"
+type="date"
+required>
+
+<input
+id="email"
+type="email"
+placeholder="Email Address"
+autocomplete="email"
+required>
+
+<input
+id="phone"
+type="tel"
+placeholder="Phone Number"
+autocomplete="tel"
+required>
+
+<input
+id="country"
+type="text"
+placeholder="Country">
+
+<input
+id="state"
+type="text"
+placeholder="State">
+
+<input
+id="city"
+type="text"
+placeholder="City">
+
+<input
+id="postalCode"
+type="text"
+placeholder="Postal Code">
+
+</div>
+
+<!-- STEP 3 -->
+
+<div class="step">
+
+<h2>Incident Information</h2>
+
+<label for="incidentStartDate">
+Date Incident Began
+</label>
+
+<input
+id="incidentStartDate"
+type="date">
+
+<label for="incidentEndDate">
+Date Incident Ended
+</label>
+
+<input
+id="incidentEndDate"
+type="date">
+
+<input
+id="estimatedLoss"
+type="text"
+placeholder="Estimated Financial Loss">
+
+<label for="currency">
+Currency
+</label>
+
+<select id="currency">
+
+<option value="">Select Currency</option>
+
+<option>USD</option>
+<option>EUR</option>
+<option>GBP</option>
+<option>INR</option>
+<option>Other</option>
+
+</select>
+
+<label for="communicationMethod">
+Communication Method
+</label>
+
+<select id="communicationMethod">
+
+<option value="">Select Method</option>
+
+<option>Email</option>
+<option>Phone</option>
+<option>WhatsApp</option>
+<option>Telegram</option>
+<option>Facebook</option>
+<option>Instagram</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<!-- STEP 4 -->
+
+<div class="step">
+
+<h2>Incident Narrative</h2>
+
+<textarea
+id="narrative"
+rows="8"
+placeholder="Describe what happened..."
+required></textarea>
+
+<label>
+
+<input
+id="accuracyDeclaration"
+type="checkbox"
+required>
+
+I certify that the information provided is accurate to the best of my knowledge.
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+id="investigationAcknowledgement"
+type="checkbox"
+required>
+
+I understand that submission of a report does not guarantee investigation or enforcement action.
+
+</label>
+
+</div>
+
+<div class="buttons">
+
+<button type="button" id="prevBtn">
+Previous
+</button>
+
+<button type="button" id="nextBtn">
+Next
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+<script src="report.js"></script>
+
+</body>
+
+</html>
+

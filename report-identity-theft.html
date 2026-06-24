@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Identity Theft Report | NCIC</title>
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a href="index.html" class="logo-link">
+
+  <img
+    src="images/logo.png"
+    alt="NCIC Logo"
+    class="site-logo">
+
+</a>
+
+</header>
+
+<section class="form-container">
+
+<h1>Identity Theft Report</h1>
+
+<div class="progress-bar">
+<div class="progress" id="progress"></div>
+</div>
+
+<p id="stepText">Step 1 of 4</p>
+
+<form id="reportForm">
+
+<!-- STEP 1 -->
+
+<div class="step active">
+
+<h2>Identity Theft Classification</h2>
+
+<label for="theftType">
+What type of identity theft occurred?
+</label>
+
+<select id="theftType" required>
+
+<option value="">Select</option>
+
+<option>Financial Identity Theft</option>
+<option>Government Document Misuse</option>
+<option>Social Media Account Takeover</option>
+<option>Email Account Compromise</option>
+<option>Employment Identity Theft</option>
+<option>Medical Identity Theft</option>
+<option>Synthetic Identity Theft</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<!-- STEP 2 -->
+
+<div class="step">
+
+<h2>Victim Information</h2>
+
+<input
+id="firstName"
+type="text"
+placeholder="First Name"
+required>
+
+<input
+id="middleName"
+type="text"
+placeholder="Middle Name">
+
+<input
+id="lastName"
+type="text"
+placeholder="Last Name"
+required>
+
+<input
+id="dateOfBirth"
+type="date"
+required>
+
+<input
+id="email"
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+id="phone"
+type="tel"
+placeholder="Phone Number"
+required>
+
+<input
+id="country"
+type="text"
+placeholder="Country">
+
+<input
+id="state"
+type="text"
+placeholder="State">
+
+<input
+id="city"
+type="text"
+placeholder="City">
+
+<input
+id="postalCode"
+type="text"
+placeholder="Postal Code">
+
+</div>
+
+<!-- STEP 3 -->
+
+<div class="step">
+
+<h2>Compromised Information</h2>
+
+<label>
+<input type="checkbox" id="emailCompromised">
+ Email Address
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" id="phoneCompromised">
+ Phone Number
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" id="bankCompromised">
+ Banking Information
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" id="governmentIdCompromised">
+ Government Identification
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" id="socialMediaCompromised">
+ Social Media Accounts
+</label>
+
+<br><br>
+
+<label>
+<input type="checkbox" id="otherCompromised">
+ Other Personal Information
+</label>
+
+</div>
+
+<!-- STEP 4 -->
+
+<div class="step">
+
+<h2>Incident Details</h2>
+
+<textarea
+id="narrative"
+rows="8"
+placeholder="Describe the identity theft incident..."
+required></textarea>
+
+<label>
+
+<input
+id="accuracyDeclaration"
+type="checkbox"
+required>
+
+I certify that the information provided is accurate.
+
+</label>
+
+<br><br>
+
+<label>
+
+<input
+id="investigationAcknowledgement"
+type="checkbox"
+required>
+
+I understand that submission does not guarantee investigation.
+
+</label>
+
+</div>
+
+<div class="buttons">
+
+<button type="button" id="prevBtn">
+Previous
+</button>
+
+<button type="button" id="nextBtn">
+Next
+</button>
+
+</div>
+
+</form>
+
+</section>
+
+<script src="report.js"></script>
+
+</body>
+</html>
+
