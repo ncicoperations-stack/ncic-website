@@ -106,7 +106,7 @@ nextBtn.addEventListener("click", async () => {
 
     try {
         const response = await fetch(
-            "https://script.google.com/macros/s/AKfycbwzVktC64lzg2rDT9-lP-7fB4u_y7k4qyxDcJfuZNsZdocVEATJG6nyppplu6kgDhfyvQ/exec",
+            "https://script.google.com/macros/s/AKfycbzcaGxl6cz2QD-bhDTrJKC87weu_GmnVQ0dghMq7aU_6BizR4zNNRzMhINvMtkxherQJQ/exec",
             {
                 method: "POST",
                 body: JSON.stringify(payload)
