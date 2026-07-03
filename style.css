@@ -1295,3 +1295,71 @@ nav ul{
 
 
 }
+/* ================================
+   Content Sections
+================================ */
+
+.content-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 25px;
+}
+
+.info-section {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 35px;
+    margin: 35px auto;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    border-left: 6px solid #0B1F3A;
+}
+
+.info-section h2 {
+    color: #0B1F3A;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.info-section p {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.info-section ul {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.info-section li {
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.info-section strong {
+    color: #0B1F3A;
+}
+
+@media (max-width:768px){
+
+    .content-section{
+        padding:0 15px;
+    }
+
+    .info-section{
+        padding:25px;
+    }
+
+    .info-section h2{
+        font-size:1.6rem;
+    }
+
+    .info-section p,
+    .info-section li{
+        font-size:1rem;
+    }
+
+}
